@@ -32,3 +32,97 @@
 #burger {
   display: none;
 }
+
+// SECTION 0
+.section0 {
+  background-image: url("imgs");
+  max-height: 639px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+// SOCIAL MEDIA
+
+.social-1{
+  max-height: 105px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons img{
+  height: 30px;
+}
+
+.icons img:hover{
+  cursor: pointer;
+}
+
+.social-1 p {
+  max-width: 394px;
+  color: #86878B;
+  font-size: 14px;
+}
+
+// MAIN
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+// SECTION 1 "Tabs with soft transitioning effect. Explained propriety of out perpetual his you."
+// SECTION 2 "Erat tempor tempus erat malesuada"
+// SECTION 3  "WHY THIS IS AWESOME"
+
+.section3-intro{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.section3-intro hr{
+  background: #E27866;
+  height: 2px;
+  width: 64px;
+}
+
+.section3 {
+  width: 100%;
+  max-height: 592px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section3 p{
+  color: grey;
+  text-align: center;
+  margin: 20px;
+  font-size: 14px;
+}
+.icon{
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.icon img{
+  color: #E27866;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+// SECTION 4 "PRICING OPTIONS"
+

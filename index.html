@@ -7,9 +7,10 @@
   <title>Paskutinė užduotis</title>
   <link rel="icon" type="image/x-icon" href="app/images/gulp.svg">
   <!-- Font awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="app/css/style.css">
+  
 </head>
 <body>
   <nav class="nav-main">
@@ -27,9 +28,8 @@
       <i class="fa-solid fa-bars"></i>
   </a>
 </nav>
-
 <!-- Section - Introduction -->
-<section class="introduction">
+<section class="section0">
   <!-- DIV for content -->
   <div>
     <img src="imgs/logo/cheshire-county-hygiene-services@2x.png"npn alt="logo2x">
@@ -46,36 +46,83 @@
   
 </section>
 <!-- Section social media 1 -->
+<!-- Text content -->
 <section class="social-1">
   <div>
     <h1>Social Media</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
 </div>
+<!-- Social media icons -->
+<div class="icons">
+  <img src="icons/facebook-logo.svg" alt="Facebook">
+  <img src="icons/instagram-logo.svg" alt="Instagram">
+  <img src="icons/twitter.svg" alt="Twitter">
+  <img src="icons/pinterest.svg" alt="Pinterest">
+</div>
 </section>
+
+<!-- Main sections -->
 <main>
+  <!-- SECTION - 1 -->
   <section class="section1">
     <button onclick="showTab(event,'register')">REGISTER</button>
     <button onclick="showTab(event,'apply')">APPLY</button>
     <button onclick="showTab(event,'receive')">RECEIVE</button>
 
     <div class="tabs">
-        <div id="Pirmas" class="tab">
-            <h2>Pirmas</h2>
+        <div id="register" class="tab">
+            <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
         </div>
-        <div id="Antras" class="tab">
-            <h2>Antras</h2>
+        <div id="apply" class="tab">
+            <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
         </div>
-        <div id="Trečias" class="tab">
-            <h2>Trečias</h2>
+        <div id="receive" class="tab">
+            <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
         </div>
     </div>
   </section>
+  <!-- SECTION - 2 -->
+  <section class="section2">
+    <img src="imgs/logo/cheshire-county-hygiene-services@2x.png" alt="logo2x" srcset="">
+    <div>
+      <h1>Erat tempor tempus erat malesuada</h1>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+    </div>
+  </section>
+
+  <!-- SECTION - 3 -->
+  <section class="section3">
+    <div class="section3-intro">
+      <h1>WHY THIS IS AWESOME</h1>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div>
+      <div class="icon">
+      <img class="desktop" src="scss/ICONS/desktop-solid.svg" alt="" srcset="">
+         <h2>Thoughtful Design</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod ibendum laoreet.</p>
+     </div>
+     <div class="icon">
+       <img class="layer" src="scss/ICONS/layer-group-solid.svg" alt="" srcset="">
+         <h2>Well Crafted</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.</p>
+     </div>
+     <div class="icon">
+       <img class="check" src="scss/ICONS/circle-check-regular.svg" alt="" srcset="">
+         <h2>Easy to Customize</h2>
+         <p>Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+     </div>
+    </div>
+    
+</section>
 </main>
 
 
