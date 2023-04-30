@@ -17,13 +17,16 @@
     background: #1C1C1C;
   }
 
+  body{
+    width: 100%;
+  }
+
   .headmenu{
     display: flex;
     gap: 44px;
     
   }
   nav .headmenu a{
-    position: relative;
     text-decoration: none;
     color: white;
     transition: 0.3s;
@@ -32,19 +35,77 @@
 #burger {
   display: none;
 }
-
+// MAIN
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: absolute;
+}
 // SECTION 0
 .section0 {
-  background-image: url("imgs");
-  max-height: 639px;
+  width: 100%;
+  box-sizing: border-box;
+  background: url(/imgs/Background-1.png);
+  background-size: cover;
+  position: relative;
+  filter: brightness(30%);
+  height: 639px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  z-index: -1;  
+}
+
+// Contecnt LEFT side
+.content0{
+  color: #FFFFFF ;
+  max-width: 651px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.content0 img{
+  height: 108px;
+  width: 247px;
+}
+.content0 button {
+  height: 42px;
+  width: 135px;
+  background: transparent;
+  border: 3px solid white;
+  color: white;
+  
+}
+.content0 button:hover{
+  cursor: pointer;
+}
+// Contecnt RIGHT side
+.form {
+  width: 360px;
+  height: 425px;
+  background-color: #FFFFFF;
+  color: #1C1C1C ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 // SOCIAL MEDIA
 
 .social-1{
+  width: 100%;
   max-height: 105px;
   padding: 20px;
   display: flex;
@@ -52,28 +113,44 @@
   justify-content: space-around;
   align-items: center;
 }
+.social-1 p {
+  color: #86878B;
+  font-size: 14px;
+  max-width: 304px;
+}
 
-.icons img{
+.content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icons{
+  width: 50%;
   height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .icons img:hover{
   cursor: pointer;
 }
 
-.social-1 p {
-  max-width: 394px;
-  color: #86878B;
-  font-size: 14px;
-}
 
-// MAIN
-main {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
 // SECTION 1 "Tabs with soft transitioning effect. Explained propriety of out perpetual his you."
+.section1 {
+  width: 100%;
+  background: url(/imgs/Background-2.png);
+  background-size: 100%;
+  position: relative;
+  height: 639px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
 // SECTION 2 "Erat tempor tempus erat malesuada"
 // SECTION 3  "WHY THIS IS AWESOME"
 
