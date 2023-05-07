@@ -24,8 +24,7 @@
       <a href="#contacts">Contact</a>
     </div>
     <!-- Menu burger for responsive design -->
-    <a id="burger">
-      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-bars" id="burger"></i>
   </a>
 </nav>
 
@@ -34,14 +33,14 @@
 
   <!-- Section - Introduction -->
 <section class="section0">
-
+<div class="overlay"></div>
   <!-- DIV for content -->
   <div class="content0">
-    <img src="imgs/logo/cheshire-county-hygiene-services@2x.png"npn alt="logo2x">
-    <h1>Explained propriety of out perpetual to you</h1>
-    <hr>
-    <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
-    <button class="download">DOWNLOAD</button>
+      <img src="imgs/logo/cheshire-county-hygiene-services@2x.png"npn alt="logo2x">
+      <h1>Explained propriety of out perpetual to you</h1>
+      <hr>
+      <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
+      <button class="download">DOWNLOAD</button>
   </div>
   <!-- DIV subscription form -->
   <div class="form">
@@ -61,7 +60,7 @@
       <input class="subscription" type="submit" value="GET STARTED">
     </form>
   </div>
-  
+
 </section>
 <!-- Section social media 1 -->
 <!-- Text content -->
@@ -76,32 +75,56 @@
   <img src="icons/instagram-logo.svg" alt="Instagram">
   <img src="icons/twitter.svg" alt="Twitter">
   <img src="icons/pinterest.svg" alt="Pinterest">
+  <i class="fa-solid fa-rss fa-2xl"></i>
 </div>
 </section>
 
   <!-- SECTION - 1 -->
   <section class="section1">
-    <button onclick="showTab(event,'register')">REGISTER</button>
-    <button onclick="showTab(event,'apply')">APPLY</button>
-    <button onclick="showTab(event,'receive')">RECEIVE</button>
-
-    <div class="tabs">
-        <div id="register" class="tab">
-            <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-        </div>
-        <div id="apply" class="tab">
-            <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-        </div>
-        <div id="receive" class="tab">
-            <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. <br><br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+    <div class="s1-overlay"></div>
+    <!-- BUTTONS -->
+    <div class="s1-buttons">
+      <button onclick="showTab(event,'register')"><span>REGISTER</span></button>
+      <button onclick="showTab(event,'apply')"><span>APPLY</span></button>
+      <button onclick="showTab(event,'receive')"><span>RECEIVE</span></button>
+    </div>
+<!-- TAbs -->
+    <div class="s1-tabs">
+      <div id="register" class="tab">
+       <div>
+        <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+      </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
         </div>
     </div>
+    <div id="apply" class="tab">
+        <div>
+          <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+        </div>
+        <div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates in reiciendis, ea, vitae ipsam nisi et eum possimus magni at commodi! Architecto quaerat, ullam dolore provident ab delectus inventore corporis voluptates repellendus quia consequatur tempore praesentium dignissimos nemo quidem pariatur aspernatur perferendis officiis id illum! Facere cupiditate repellendus harum.</p></div>
+    </div>
+    <div id="receive" class="tab">
+        <div>
+          <h1>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h1>
+        </div>
+       <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit animi excepturi? Cumque mollitia fugit accusamus laudantium aut iste ab quo, tempora iure laborum animi labore asperiores maiores cum, deleniti soluta suscipit adipisci tenetur quae eligendi impedit numquam ipsam nemo! Eum hic perspiciatis laboriosam omnis. Necessitatibus quod temporibus possimus molestias!</p>
+      </div>
+    </div>
+    </div>
+    <!-- IMAGES -->
+    <div class="s1-images">
+      <div class="top">
+        <img src="imgs/img-01.png" alt="" srcset="">
+        <img src="imgs/img-03.png" alt="" srcset="">
+      </div>
+      <div class="bottom">
+        <img src="imgs/img-02.png" alt="" srcset="">
+      </div>
+      
+    </div>
+
   </section>
   <!-- SECTION - 2 -->
   <section class="section2">
@@ -110,7 +133,7 @@
     </div>
     <div class="content2">
       <h1>Erat tempor tempus erat malesuada</h1>
-      <hr>
+      <hr  width="200px" color="#E27866" size="2px">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
     </div>
   </section>
@@ -119,23 +142,26 @@
   <section class="section3">
     <div class="section3-intro">
       <h1>WHY THIS IS AWESOME</h1>
-      <hr>
+      <hr width="65px" color="#E27866" size="1px">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-    <div>
+    <div class="section3-icons">
       <div class="icon">
       <img class="desktop" src="scss/ICONS/desktop-solid.svg" alt="" srcset="">
          <h2>Thoughtful Design</h2>
+         <br>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod ibendum laoreet.</p>
      </div>
      <div class="icon">
        <img class="layer" src="scss/ICONS/layer-group-solid.svg" alt="" srcset="">
          <h2>Well Crafted</h2>
+         <br>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.</p>
      </div>
      <div class="icon">
        <img class="check" src="scss/ICONS/circle-check-regular.svg" alt="" srcset="">
          <h2>Easy to Customize</h2>
+         <br>
          <p>Proin gravida dolor sit amet lacus accumsan et viverra.</p>
      </div>
     </div>
@@ -146,7 +172,7 @@
 <section class="section4">
   <div class="content4">
     <h1>PRICING OPTIONS</h1>
-    <hr>
+    <hr width="65px" color="#41D395" size="1px">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   <div class="plans">
@@ -192,7 +218,7 @@
 <section class="section5">
   <div class="content5">
     <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
-    <hr>
+    <hr width="65px" color="#6696E2" size="1px">
   </div>
   <div class="testimonial">
     <div class="person">
@@ -202,19 +228,23 @@
 </section>
 <!-- SECTION - 6 CONTACT US -->
 <section class="section6">
-  <div class="section5-head">
+  <div class="section6-head">
     <h1>CONTACT US</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </div>
   <div class="form2">
     <form action="">
-      <input type="text" placeholder="First name">
-      <input type="text" placeholder="Last name">
-      <input type="text" placeholder="Phone number">
-      <input type="checkbox">
+      <div class="input-text">
+          <input  type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+          <input type="text" placeholder="Phone number">
+      </div> 
+      <div class="form2-checkbox">
+      <input type="checkbox" id="checkbox">
       <label for="checkbox">PERSONAL</label>
-      <input type="checkbox">
+      <input type="checkbox" id="checkbox">
       <label for="checkbox">COMPANY</label>
+    </div>
       <input class="subscription" type="submit" value="SEND">
     </form>
   </div>
@@ -225,6 +255,7 @@
     <img src="icons/instagram-logo.svg" alt="Instagram">
     <img src="icons/twitter.svg" alt="Twitter">
     <img src="icons/pinterest.svg" alt="Pinterest">
+    <i class="fa-solid fa-rss fa-2xl"></i>
   </div>
     <div class="reference">
     <p>© 2019 Cheshire County</p>
@@ -233,7 +264,10 @@
 </footer>
 </main>
 
-
+  
+  <!-- Script js -->
   <script src="script.js"></script>
+  <!-- Custom swiper js -->
+  <script src="swiper.js"></script>
 </body>
 </html>
