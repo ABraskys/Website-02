@@ -28,3 +28,4 @@ const swiper = new Swiper('.swiper', {
       swiper.slideTo(this.getAttribute("index"))
     })
   }
+  
