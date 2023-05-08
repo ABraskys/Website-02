@@ -1,4 +1,7 @@
 // MAIN
+body{
+  width: 100%;
+}
 main {
     width: 100%;
     display: flex;
@@ -8,13 +11,12 @@ main {
   }
   // SECTION 0
   .section0 {
+    margin: auto;
     width: 100%;
     padding-top: 72px;
-    
     box-sizing: border-box;
     background: url(/imgs/Background-1.png);
-    background-position-y:-200px;
-    background-size: cover;
+    background-size: contain;
     position: relative;
     height: 639px;
     display: flex;
@@ -45,6 +47,10 @@ main {
     position: relative;
     z-index: 1;
   }
+  .content0 h1{
+    width: 425px;
+    font-size: 36px;
+  }
   
   .content0 img{
     height: 108px;
@@ -66,7 +72,7 @@ main {
   form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
 
@@ -76,6 +82,7 @@ main {
     background-color: #FFFFFF;
     color: #1C1C1C;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     z-index: 1;
@@ -96,6 +103,7 @@ main {
   }
   // SOCIAL MEDIA
   .social-1{
+    margin: auto;
     width: 100%;
     max-height: 105px;
     padding: 20px;
@@ -129,7 +137,7 @@ main {
     color: #E27866;
   }
   
-  .icons img:hover{
+  .icons i:hover{
     cursor: pointer;
     transform: scale(115%);
   }
@@ -137,6 +145,7 @@ main {
   
   // SECTION 1 "Tabs with soft transitioning effect. Explained propriety of out perpetual his you."
   .section1 {
+    margin: auto;
     width: 100%;
     background: url(/imgs/Background-2.png);
     background-position-y: -200px ;
@@ -149,7 +158,6 @@ main {
   }
 
   .s1-overlay{
-    
     height: 100%;
     background: linear-gradient(to RIGHT#6696E2 #E27866);
   }
@@ -211,6 +219,8 @@ main {
   }
   // SECTION 2 "Erat tempor tempus erat malesuada"
   .section2 {
+    margin: auto;
+    width: 100%;
     background: #1C1C1C;
     height: 596px;
     color: #FFFFFF;
@@ -236,13 +246,12 @@ main {
   .section3 {
     margin: auto;
     width: 100%;
-    max-height: 592px;
+    height: 592px;
     background: #FFFFFF;
     display: flex;
-
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   
   .section3-intro{
@@ -253,31 +262,40 @@ main {
   align-items: center;
   gap: 20px;
   }
+  .section3 h1{
+    font-size: 36px;
+  }
   
   .section3-icons{
+    margin: auto;
+    width: 960px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
     }
   
   .section3 p{
     color: grey;
     text-align: center;
     font-size: 14px;
+    width: 240px;
   }
   .icon{
-    width: 400px;
-    height: 400px;
+    max-width: 300px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+  
   }
-  .icon img{
+  .icon i{
     color: #E27866;
     width: 50px;
     height: 50px;
+    border: 1px solid #E27866 ;
+    border-radius: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -296,6 +314,7 @@ main {
     justify-content: space-around;
   }
   .content4 {
+    color: #F5F5F5;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -305,14 +324,50 @@ main {
   .plans{
     display: flex;
     justify-content: space-around;
-    align-items: ccenter;
+    align-items: center;
     text-align: justify;
     list-style: none;
   }
   .plan {
+    background: white;
     width: 343px;
-    text-align: justify;
+    text-align: center;
+    border-radius:10px;
   }
+  .plan-head{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    background: #1C1C1C;
+    color: #FFFFFF;
+    font-weight: 300;
+  }
+  .plan h2{
+    height: 60px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .plan h1{
+    padding: 20px;
+    font-size: 96px;
+    font-weight: 500;
+  }
+  .plan h1 span{
+    font-size: 40px;
+  }
+  .plan p{
+    padding: 10px;
+  }
+  
+  .plan li{
+    line-height: 40px;
+  }
+  .most{
+    background: #41D395;
+    color: #F5F5F5;
+    line-height: 40px ;
+  }
+
   // SECTION 5 "TESTIMONIAL"
   .section5 {
     margin: auto;
@@ -384,3 +439,4 @@ main {
   border: none;
   background: #41D395;
   }
+

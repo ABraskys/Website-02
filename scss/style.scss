@@ -10,11 +10,11 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
   }
-  body{
-    width: 100%;
+  
+@media (max-width: 1000px){
+  #burger {
+    display:block;
   }
-@media (max-width: 768px){
-
 }
 
 @media (max-width: 500px){
