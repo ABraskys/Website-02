@@ -13,10 +13,9 @@ main {
   .section0 {
     margin: auto;
     width: 100%;
-    padding-top: 72px;
     box-sizing: border-box;
     background: url(/imgs/Background-1.png);
-    background-size: contain;
+    background-size: cover;
     position: relative;
     height: 639px;
     display: flex;
@@ -69,36 +68,53 @@ main {
     cursor: pointer;
   }
   // Content RIGHT side
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
+  
 
   .form {
     width: 360px;
     height: 425px;
     background-color: #FFFFFF;
     color: #1C1C1C;
+    border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
-    align-items: center;
     z-index: 1;
   }
-  .form h1{
+  form {
+    height: 100%;
+    display: flex;
+    line-height: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  form input text{
+    height: 30px;
+  }
+  .form-head{
+    text-align: center;
+    padding: 20px;
     width: 100%;
     height: 60px;
     background: #F5F5F5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
-  .subscription{
+  .form-head span{
+    color: #E27866;
+  }
+  
+  .form .subscription{
+    font-size: 18px;
     width: 100%;
     height: 60px;
     font-weight: bold;
     color: #FFFFFF;
     background-color: #41D395;
     border-style: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
   }
   // SOCIAL MEDIA
@@ -148,12 +164,12 @@ main {
     margin: auto;
     width: 100%;
     background: url(/imgs/Background-2.png);
-    background-position-y: -200px ;
+    background-position-y:center;
     background-size: cover;
     height: 639px;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items: center;
   }
 
@@ -190,12 +206,11 @@ main {
     align-items: center;
   }
   .s1-tabs{
-    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 295px;
-    width: 520px;
+    justify-content: space-around;
+    height: 100%;
+    max-width: 520px;
     color: white;
   }
   .s1-tabs h1{
@@ -206,7 +221,7 @@ main {
   }
 
   .s1-images {
-    width: 360px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,8 +282,8 @@ main {
   }
   
   .section3-icons{
+    width: 100%;
     margin: auto;
-    width: 960px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -281,8 +296,9 @@ main {
     font-size: 14px;
     width: 240px;
   }
+
   .icon{
-    max-width: 300px;
+    margin: auto;
     display: flex;
     gap: 10px;
     flex-direction: column;
@@ -305,13 +321,13 @@ main {
   
   // SECTION 4 "PRICING OPTIONS"
   .section4{
-    margin: auto;
+    padding: 100px;
     width: 100%;
     height: 883px;
     background: #6696E2;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .content4 {
     color: #F5F5F5;
@@ -323,8 +339,8 @@ main {
   
   .plans{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
     text-align: justify;
     list-style: none;
   }
@@ -373,7 +389,7 @@ main {
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 591px;
     background: #FFFFFF ;
@@ -385,27 +401,56 @@ main {
     gap: 30px;
   }
   .testimonial{
+    width:100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    gap: 100px;
   }
-  .person{
-    
-
+ 
+  .person p{
+    margin: 20px;
+    position: relative;
+    width: 280px;
+    padding: 20px;
+    background:#6696E2;
+    color: #F5F5F5;
+    border-radius: 10px;
   }
+  .person img{
+    margin: auto;
+    float: left;
+  }
+  .person p::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-color: #6696E2 transparent;
+    border-width: 16px 18px 0;
+    bottom: -16px;
+    left: 20%;
+    margin-left: -18px;
+ }
   // SECTION 6 "CONTACT US"
   .section6 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: #E27866;
     height: 575px;
   }
   .section6-head {
   color: #FFFFFF;
+  width: 390px;
+  font-size: 14px;
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   }
@@ -429,7 +474,6 @@ main {
   }
   input #checkbox{
     border-radius: 100%;
-
   }
 
   .form2 .subscription{
@@ -437,6 +481,9 @@ main {
   width: 160px;
   border-radius: 5px;
   border: none;
+  font-size: 15px;
   background: #41D395;
+  color: #F5F5F5;
+  margin-bottom: 30px; ;
   }
 
